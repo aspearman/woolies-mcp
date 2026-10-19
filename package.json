@@ -1,16 +1,16 @@
 {
-  "name": "woolies-mcp",
+  "name": "@aspearman/woolies-mcp",
   "version": "1.1.0",
   "description": "MCP server for shopping the Woolworths New Zealand catalogue: search, product detail, delivery location and cart.",
   "license": "MIT",
   "author": "Adrian Baker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adrian-baker/woolies-mcp"
+    "url": "https://github.com/aspearman/woolies-mcp"
   },
-  "homepage": "https://github.com/adrian-baker/woolies-mcp#readme",
+  "homepage": "https://github.com/aspearman/woolies-mcp#readme",
   "bugs": {
-    "url": "https://github.com/adrian-baker/woolies-mcp/issues"
+    "url": "https://github.com/aspearman/woolies-mcp/issues"
   },
   "keywords": [
     "mcp",
@@ -59,7 +59,8 @@
     "check:coverage": "tsx scripts/coverage-check.ts",
     "check:oauth": "tsx scripts/oauth-check.ts",
     "check:credential-signin": "tsx scripts/credential-signin-check.ts",
-    "check:session-recovery": "tsx scripts/session-recovery-check.ts"
+    "check:session-recovery": "tsx scripts/session-recovery-check.ts",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
@@ -79,5 +80,8 @@
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.68.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
