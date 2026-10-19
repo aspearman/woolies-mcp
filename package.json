@@ -59,8 +59,7 @@
     "check:coverage": "tsx scripts/coverage-check.ts",
     "check:oauth": "tsx scripts/oauth-check.ts",
     "check:credential-signin": "tsx scripts/credential-signin-check.ts",
-    "check:session-recovery": "tsx scripts/session-recovery-check.ts",
-    "prepublishOnly": "npm run build"
+    "check:session-recovery": "tsx scripts/session-recovery-check.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
@@ -80,8 +79,5 @@
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.68.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
